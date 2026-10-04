@@ -1,0 +1,11 @@
+# MPLAB X
+build/
+dist/
+.generated_files/
+nbproject/private/
+*.o
+*.d
+*.elf
+*.hex
+*.map
+.DS_Store
