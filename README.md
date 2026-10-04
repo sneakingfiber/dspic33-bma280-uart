@@ -2,6 +2,8 @@
 
 Firmware for a **dsPIC33EP512MU810** that reads a **BMA280** accelerometer over SPI, computes roll/pitch, and streams data over UART. Built with MPLAB X and the XC16 compiler.
 
+The firmware targets a board paired with the manufacturer's add-on module (four motors with wheels), with the goal of letting the robot move through its surrounding space while autonomously avoiding obstacles. The code in this repository covers the sensing and communication layer: accelerometer acquisition, orientation estimation and the UART interface.
+
 ## Features
 
 - 100 Hz main loop paced by Timer1 (10 ms period), with deadline-miss detection
